@@ -7,6 +7,6 @@ class User < ApplicationRecord
   has_many :reviews
   has_many :reservations
 
-  validates_length_of :password, in: 6..20, on: :create
-  validates :password, presence: true
+  # validates_length_of :password, in: 6..20, on: :create
+  # validates :password, presence: true
 end

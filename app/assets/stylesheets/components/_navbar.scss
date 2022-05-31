@@ -1,9 +1,32 @@
-.navbar {
+.navbar-lewagon {
   justify-content: space-between;
-  background-color: $black;
-  color: $white;
+  background: $black;
+  color: $white
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
 }
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.navbar-toggler-icon {
+  color: $white;
+}
+
+.link-studioshare {
+  color: $white;
+}
+
+.logo{
+  color: $white;
+  font-family: $headers-font;
+  font-size: larger;
+  margin: 0;
+}
+
+.logo span{
+  color: $green;
 }

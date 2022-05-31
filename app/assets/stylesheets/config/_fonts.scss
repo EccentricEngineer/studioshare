@@ -3,8 +3,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 
 // Define fonts for body and headers
-$body-font: "Inter", "sans-serif", 400;
-$headers-font: "Inter", "sans-serif", 700;
+$body-font: "Inter", "sans-serif";
+$headers-font: "Inter", "sans-serif";
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+}
 
 
 // To use a font file (.woff) uncomment following lines

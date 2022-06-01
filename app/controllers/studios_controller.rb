@@ -4,27 +4,27 @@ class StudiosController < ApplicationController
 
   def index
     if params[:query].present?
-      @studios = policy_scope(Studio).search_by_name_and_address(params[:query]) #Ali:Confirm this based on search criteria from frontend!
+      @studios = Studio.search_by_name_and_address(params[:query]) #Ali:Confirm this based on search criteria from frontend!
     else
       @studios = policy_scope(Studio)
-      authorize @studios
+      # authorize @studios
     end
   end
 
   def show
-    @review = Review.new
-    @reservation = Reservation.new
+    # @review = Review.new
+    # @reservation = Reservation.new
   end
 
   def new
     @studio = Studio.new
-    authorize @studio
+    # authorize @studio
   end
 
   def create
     @studio = Studio.new(studio_params)
     @studio.user = current_user
-    authorize @studio
+    # authorize @studio
     if @studio.save
       redirect_to studio_path(@studio)
     else
@@ -55,7 +55,7 @@ class StudiosController < ApplicationController
 
   def set_studio
     @studio = Studio.find(params[:id])
-    authorize @studio
+    # authorize @studio # use when you require pundit
   end
 
   def studio_params

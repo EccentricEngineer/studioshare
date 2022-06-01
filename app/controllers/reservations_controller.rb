@@ -1,6 +1,6 @@
 class ReservationsController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :index, :show ]
-  skip_after_action :verify_policy_scoped, only: :index
+  # skip_after_action :verify_policy_scoped, only: :index
   before_action :set_reservation, only: [ :show ]
   before_action :set_studio, only: [ :new, :create ]
 
@@ -9,17 +9,17 @@ class ReservationsController < ApplicationController
   end
 
   def show
-    authorize @reservation
+    # authorize @reservation
   end
 
   def new
     @reservation = Reservation.new
-    authorize @reservation
+    # authorize @reservation
   end
 
   def create
     @reservation = Reservation.new(reservation_params)
-    authorize @reservation
+    # authorize @reservation
     @reservation.user = current_user
     @reservation.studio = Studio.find(params[:studio_id])
     if @reservation.save

@@ -1,5 +1,5 @@
 class ReservationsController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :index, :show ]
+  # skip_before_action :authenticate_user!, only: [ :index, :show ]
   # skip_after_action :verify_policy_scoped, only: :index
   before_action :set_reservation, only: [ :show ]
   before_action :set_studio, only: [ :new, :create ]
@@ -13,7 +13,9 @@ class ReservationsController < ApplicationController
   end
 
   def new
+    @studio = Studio.find(params[:studio_id])
     @reservation = Reservation.new
+
     # authorize @reservation
   end
 
@@ -23,9 +25,9 @@ class ReservationsController < ApplicationController
     @reservation.user = current_user
     @reservation.studio = Studio.find(params[:studio_id])
     if @reservation.save
-      redirect_to reservation_path(@reservation)
+      redirect_to studios_path
     else
-      redirect_to studio_path(@studio)
+      redirect_to studios_path
     end
   end
 
@@ -40,6 +42,6 @@ class ReservationsController < ApplicationController
   end
 
   def reservation_params
-    params[:reservation].permit(:status, :date)
+    params[:reservation].permit(:date, :status)
   end
 end

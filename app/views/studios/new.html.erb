@@ -1,1 +1,16 @@
-<h1>Show me how to add new studios!!</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+      <h1>Create a new studio</h1>
+        <%= simple_form_for @studio do |f| %>
+        <%= f.input :name %>
+        <%= f.input :address %>
+        <%= f.input :photo_url %>
+        <%= f.input :opening_hour %>
+        <%= f.input :closing_hour %>
+        <%= f.input :price %>
+        <%= f.submit class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+</div>

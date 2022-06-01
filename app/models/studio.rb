@@ -5,5 +5,5 @@ class Studio < ApplicationRecord
   has_many :reviews
   has_many :reservations
 
-  validates :name, :country, :city, :address, :capacity, presence: true
+  validates :name, :address, presence: true
 end

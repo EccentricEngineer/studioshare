@@ -23,7 +23,7 @@ class StudiosController < ApplicationController
     if @studio.save
       redirect_to studio_path(@studio)
     else
-      render :new
+      redirect_to studios_path
     end
   end
 

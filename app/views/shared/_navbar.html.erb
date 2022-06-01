@@ -1,29 +1,37 @@
 <div class="navbar navbar-expand-sm navbar-dark navbar-lewagon">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
       <h1 class=logo>StudioShare<span>.</span></h1>
-</a>
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
+        <% if user_signed_in? %>
           <li class="nav-item active">
-            <a class="btn button" href="#">Log in</a>
+            <a class="btn button" href="#">Listings</a>
           </li>
           <li class="nav-item">
-            <a class="btn button btnwhite" href="#">register</a>
+            <a class="btn button btnwhite" href="#">Reservations</a>
           </li>
           <li class="nav-item dropdown">
-            <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
+              <%= link_to "Listings", "#", class: "dropdown-item" %>
+              <%= link_to "Reservations", "#", class: "dropdown-item" %>
+              <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
             </div>
           </li>
-          <!--li class="nav-item"-->
-          <!--/li-->
+        <% else %>
+          <li class="nav-item active">
+            <%= link_to "Log in", new_user_session_path, class: "btn button" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "register", new_user_registration_path, class: "btn button btnwhite" %>
+          </li>
+        <% end %>
       </ul>
     </div>
   </div>

@@ -1,5 +1,8 @@
-<%= simple_form_for [ @studio, @reservation ] do |f| %>
-  <%= f.input :status, label: 'Message the owner' %>
-  <%= f.input :date, as: :date, html5: true %>
-  <%= f.submit "Reserve", class: "button" %>
-<% end %>
+<div class="form-container">
+  <h1>Make a reservation</h1>
+  <%= simple_form_for [ @studio, @reservation ] do |f| %>
+    <%= f.input :status, label: 'Message the owner' %>
+    <%= f.input :date, as: :date, html5: true %>
+    <%= f.submit "Reserve", class: "btn button btnwhite" %>
+  <% end %>
+</div>

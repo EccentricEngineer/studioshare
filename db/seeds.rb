@@ -33,10 +33,16 @@ user3 = User.create!(
   password: "1234567890",
 )
 
+user4 = User.create!(
+  name: "Yaniv",
+  email: "yaniv@live.com",
+  password: "1234567890",
+)
+
 studio1 = Studio.create!(
-  name: "Alexie Studio",
+  name: "Alexie's Studio",
   user: user1,
-  address: "lane 2, Poland",
+  address: "13th St, New York, NY 10011",
   photo_url: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
@@ -44,30 +50,50 @@ studio1 = Studio.create!(
 )
 
 studio2 = Studio.create!(
-  name: "Ali Studio",
+  name: "Ali's Studio",
   user: user2,
-  address: "lane 2, UK",
+  address: "18 Mayfair Street, London",
   photo_url: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-  price: 100
+  price: 500
 )
 
 studio3 = Studio.create!(
-  name: "Claudio Studio",
+  name: "Claudio's Studio",
   user: user3,
-  address: "lane 10, France",
+  address: "21 Boulevard Road, Paris",
   photo_url: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-  price: 400
+  price: 200
 )
 
 studio4 = Studio.create!(
-  name: "Claudio Studio",
+  name: "Alex's Studio",
   user: user2,
-  address: "lane 9, Spain",
+  address: "290 9TH NEW YORK NY 10001-5713",
+  photo_url: "https://images.unsplash.com/photo-1493078770291-aa3109c60ef2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2153&q=80",
+  opening_hour: "2022-05-31 14:22:53.657850837 +0200",
+  closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+  price: 150
+)
+
+studio5 = Studio.create!(
+  name: "Steph's Studio",
+  user: user3,
+  address: "6318 Hollywood Blvd",
   photo_url: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+  opening_hour: "2022-05-31 14:22:53.657850837 +0200",
+  closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+  price: 350
+)
+
+studio6 = Studio.create!(
+  name: "Hadil's Studio",
+  user: user3,
+  address: "9836 Hollywood Blvd",
+  photo_url: "https://images.unsplash.com/photo-1581315489338-90e99097ab3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
   price: 600
@@ -76,22 +102,29 @@ studio4 = Studio.create!(
 reservation1 = Reservation.create!(
   user: user1,
   studio: studio1,
-  status: 'reservations has been done!',
-  date: DateTime.now()
+  status: 'Reservation Successful!',
+  date: DateTime.now
 )
 
 reservation2 = Reservation.create!(
   user: user2,
   studio: studio2,
-  status: 'reservations has been done!',
-  date: DateTime.now()
+  status: 'Reservation Successful!',
+  date: DateTime.now
 )
 
 reservation3 = Reservation.create!(
   user: user3,
   studio: studio3,
-  status: 'reservations has been done!',
-  date: DateTime.now()
+  status: 'Reservation Successful!',
+  date: DateTime.now
+)
+
+reservation4 = Reservation.create!(
+  user: user4,
+  studio: studio4,
+  status: 'Reservation Successful!',
+  date: DateTime.now
 )
 
 

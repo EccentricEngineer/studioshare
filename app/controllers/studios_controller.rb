@@ -6,7 +6,7 @@ class StudiosController < ApplicationController
     if params[:query].present?
       @studios = Studio.search_by_name_and_address(params[:query]) #Ali:Confirm this based on search criteria from frontend!
     else
-      @studios = policy_scope(Studio)
+      # @studios = policy_scope(Studio)
       # authorize @studios
     end
   end

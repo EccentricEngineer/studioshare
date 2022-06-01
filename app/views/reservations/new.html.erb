@@ -1,0 +1,5 @@
+<%= simple_form_for [ @studio, @reservation ] do |f| %>
+  <%= f.input :status, label: 'Message the owner' %>
+  <%= f.input :date, as: :date, html5: true %>
+  <%= f.submit "Reserve", class: "button" %>
+<% end %>

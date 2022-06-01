@@ -4,7 +4,7 @@ class StudiosController < ApplicationController
 
   def index
     if params[:query].present?
-      @studios = policy_scope(Studio).search_by_name_and_address(params[:query]) #Ali:Confirm this based on search criteria!
+      @studios = policy_scope(Studio).search_by_name_and_address(params[:query]) #Ali:Confirm this based on search criteria from frontend!
     else
       @studios = policy_scope(Studio)
       authorize @studios
@@ -17,7 +17,7 @@ class StudiosController < ApplicationController
   end
 
   def new
-    @bstudio = Studio.new
+    @studio = Studio.new
     authorize @studio
   end
 
@@ -59,6 +59,6 @@ class StudiosController < ApplicationController
   end
 
   def studio_params
-    params[:studio].permit(:name, :price, :photo_url, :address)
+    params[:studio].permit(:name, :price, :photo_url, :address, :opening_hour, :closing_hour)
   end
 end

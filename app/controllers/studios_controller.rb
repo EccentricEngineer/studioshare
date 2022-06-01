@@ -3,12 +3,7 @@ class StudiosController < ApplicationController
   before_action :set_studio, only: [:show, :edit, :update, :destroy]
 
   def index
-    if params[:query].present?
-      @studios = Studio.search_by_name_and_address(params[:query]) #Ali:Confirm this based on search criteria from frontend!
-    else
-      # @studios = policy_scope(Studio)
-      # authorize @studios
-    end
+    @studios = Studio.all
   end
 
   def show

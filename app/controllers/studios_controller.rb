@@ -32,6 +32,8 @@ class StudiosController < ApplicationController
     end
   end
 
+# user must be logged in at this stage
+
   def edit
   end
 

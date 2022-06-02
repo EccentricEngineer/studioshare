@@ -1,4 +1,6 @@
 class Studio < ApplicationRecord
+  has_one_attached :photo
+
   belongs_to :user #vendor
 
   has_many :users #visitors

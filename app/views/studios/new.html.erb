@@ -5,7 +5,7 @@
         <%= simple_form_for @studio do |f| %>
         <%= f.input :name %>
         <%= f.input :address %>
-        <%= f.input :photo_url, as: :text, html5: true  %>
+        <%= f.input :photo_url, as: :file%>
         <%= f.input :opening_hour %>
         <%= f.input :closing_hour %>
         <%= f.input :price %>
@@ -14,3 +14,15 @@
     </div>
   </div>
 </div>
+
+
+<%# form container + doesn't work (link) + redirect (as soon as they create studio) + image thing%>
+<%# if else statement?%>
+<%# link image and submit form to => new stuff%>
+
+<%# cloudinary => upload photo%>
+<%# redirect to homepage%>
+
+<%# div containers thing%>
+<%# where is the info submited?%>
+<%# redirect to homepage + "form submited!" pop-up%>

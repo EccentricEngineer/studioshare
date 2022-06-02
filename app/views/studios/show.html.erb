@@ -1,22 +1,24 @@
+
   <div class="title-studio">
     <h1><%= @studio.name %></h1>
     <p><%= @studio.address %></p>
   </div>
 
-
-  <div class="box-reservation">
-    <div class="image-studio">
-    <%# image hardcoded rn, pls change later %>
-      <%= image_tag "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80", height: 600 %>
-    </div>
-    <div class="reservation-studio">
-      <div class="top-box-reservation">
-        <h4> <%= @studio.price%>€</h4>
-        <h4>rating</h4>
+    <div class="box-reservation">
+      <div class="image-studio">
+      <%# image hardcoded rn, pls change later %>
+        <%= image_tag "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80", height: 700 %>
       </div>
-      <div class="button-reservation">
-        <%= link_to "book this studio", new_studio_reservation_path(@studio) %>
+      <div class="reservation-box">
+        <div class="reservation-studio">
+          <div class="top-box-reservation">
+            <h4> <%= @studio.price%>€</h4>
+          </div>
+          <div class="button-reservation">
+            <%= link_to "book this studio", new_studio_reservation_path(@studio) %>
+          </div>
+          <p>reserve now, pay later!</p>
+        </div>
       </div>
-      <p>reserve now, pay later!</p>
     </div>
   </div>

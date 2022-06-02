@@ -10,14 +10,15 @@
   }
 }
 
-.recommended-img {
+.card-img {
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 400px;
-  min-width: 200px;
+  width: 250px;
+  // max-width: 400px;
+  // min-width: 200px;
   color: $white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   height: 180px;
@@ -25,9 +26,9 @@
   border-top-right-radius: 10px;
 }
 
-.recommended-block {
+.card-block {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   // flex-wrap: wrap;
   justify-content: center;
   grid-gap: 16px;
@@ -37,7 +38,7 @@
   margin-right: 50px;
 }
 
-.recommended-card {
+.studio-card {
   display: flex;
   flex-direction: column;
   padding: 2px;
@@ -48,7 +49,7 @@
   box-shadow: 0px 0px 5px 0px rgba(27,61,88,.2);
 }
 
-.recommended-text {
+.studio-card-text {
   display: flex;
   justify-content: left;
   flex-direction: column;
@@ -56,7 +57,6 @@
   text-align: left;
   padding-top: 10px;
   h3 {
-    padding-top: 5px;
     font-size: 15px;
   }
   h4 {
@@ -120,35 +120,35 @@
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
-  .cards {
-    grid-template-columns: 1fr 1fr;
+  .studio-card {
+    grid-template-columns: 1fr;
   }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  .cards {
-    grid-template-columns: 1fr 1f;
+  .studio-card {
+    grid-template-columns: 1fr;
   }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr;
+  .studio-card {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  .studio-card {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  .cards {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  .studio-card {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }

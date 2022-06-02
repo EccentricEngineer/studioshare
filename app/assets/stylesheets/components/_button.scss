@@ -7,6 +7,9 @@
   gap: 10px;
   border-radius: 50px;
   opacity: 1;
-  transition: opacity 0.3s ease;
   margin-right: 10px;
+
+  &:hover {
+    color: $green;
+  }
 }

@@ -1,6 +1,6 @@
 <div class="search-form-control form-group">
 <%= form_tag(studios_path, :method => "get", id: "search-form") do %>
-<%= text_field_tag :search, params[:search], placeholder: "Search for Studios" ,class:"form-control string required" %>
-<%= submit_tag "Search", class:"btn btn-flat" %>
+<%= text_field_tag :search, params[:search], placeholder: "Search for studios near you" ,class:"form-control string required" %>
+<%= submit_tag "Search", class:"btn button btnwhite" %>
 <% end %>
 </div>

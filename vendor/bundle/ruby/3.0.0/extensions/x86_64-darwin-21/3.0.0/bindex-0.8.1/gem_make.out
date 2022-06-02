@@ -1,0 +1,15 @@
+current directory: /Users/claudioclemente/code/c-cle/studioshare/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/claudioclemente/.rbenv/versions/3.0.3/bin/ruby -I /Users/claudioclemente/.rbenv/versions/3.0.3/lib/ruby/3.0.0 -r ./siteconf20220601-13010-jcpiwo.rb extconf.rb
+creating Makefile
+
+current directory: /Users/claudioclemente/code/c-cle/studioshare/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= clean
+
+current directory: /Users/claudioclemente/code/c-cle/studioshare/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\=
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/claudioclemente/code/c-cle/studioshare/vendor/bundle/ruby/3.0.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20220601-13010-9ni3j0/skiptrace/internal

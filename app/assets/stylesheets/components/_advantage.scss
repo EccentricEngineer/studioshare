@@ -1,25 +1,55 @@
+.title-advantage {
+  display: flex;
+  justify-content: center;
+  h3 {
+    padding-bottom: 25px;
+  }
+  #dot-color {
+    color: $green;
+  }
+}
+
 .cards {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
+  align-content: flex-start;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  justify-content: center;
 }
 
 .card-category {
   background-size: cover;
   background-position: center;
-  height: 220px;
+  height: 100px;
+  width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: $white;
   font-size: 24px;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .advantage-container {
+  display: flex;
+  flex-direction: column;
+  height: auto;
   margin: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  h2 {
+    padding-top: 25px;
+  }
+  #dot-color {
+    color: $green;
+  }
+  p {
+    font-size: 15px;
+  }
 }
 
 // Smallest device

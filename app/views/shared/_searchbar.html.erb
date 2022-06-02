@@ -1,26 +1,7 @@
-<div class="banner-searchbar">
-  <div class="container">
-    <div class="row">
-      <div class="col boite">
-        <form class="form-floating">
-          <input type="email" class="form-control" id="floatingInputValue" placeholder="choose a location" value="choose a location">
-          <label for="floatingInputValue">Input with value</label>
-        </form>
-      </div>
-      <div class="col boite">
-        <form class="form-floating">
-          <input class="form-control" type="date" placeholder="dd-mm-yyyy" name="checkin" />
-        </form>
-      </div>
-      <div class="col boite">
-        <form class="form-floating">
-          <input type="email" class="form-control" id="floatingInputValue" placeholder="select the duration" value="select a duration">
-          <label for="floatingInputValue">Input with value</label>
-        </form>
-      </div>
-      <div class="col boite">
-        <button type="submit" class="btn btn-primary">Search</button>
-      </div>
-    </div>
-  </div>
+<div class="search-form-control form-group">
+  <input class="form-control string required" type="text" placeholder="Where do you want to find a studio?" name="search[query]" id="search_query" />
+  <button name="button" type="submit" class="btn btn-flat">
+    <%# button redirect to all studio for nor - Alexie %>
+    <i href="/studios" class="fas fa-search"></i> Search
+  </button>
 </div>

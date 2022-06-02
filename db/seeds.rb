@@ -41,8 +41,6 @@ user4 = User.create!(
   password: "1234567890",
 )
 
-
-
 studio1 = Studio.new(
   name: "Alexie's Studio",
   user: user1,
@@ -56,15 +54,18 @@ file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ix
 studio1.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 studio1.save
 
-# studio2 = Studio.create!(
-#   name: "Ali's Studio",
-#   user: user2,
-#   address: "London",
-#   photo_url: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 500
-# )
+ studio2 = Studio.create!(
+   name: "Ali's Studio",
+   user: user2,
+   address: "London",
+   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+   price: 500
+ )
+
+file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+studio2.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+studio2.save
 
 # studio3 = Studio.create!(
 #   name: "Claudio's Studio",

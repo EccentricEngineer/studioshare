@@ -1,3 +1,8 @@
+<head>
+  <meta http-equiv="btn btn-primary" content="0; URL=https://www.bitdegree.org/" />
+</head>
+
+
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
@@ -5,14 +10,11 @@
         <%= simple_form_for @studio do |f| %>
         <%= f.input :name %>
         <%= f.input :address %>
-        <form method="post" action="/home" enctype="multipart/form-data">
-		      <p>
-		      	<input type="file" name="file" autocomplete="off" required>
-		      </p>
+        <%= f.input :photo_url%>
         <%= f.input :opening_hour %>
         <%= f.input :closing_hour %>
         <%= f.input :price %>
-        <%= f.submit class: 'btn btn-primary' input onclick="window.location.href = 'https://www.tutorialspoint.com/online_html_editor.php';" %>
+        <%= f.submit class: 'btn btn-primary' %>
       <% end %>
     </div>
   </div>
@@ -25,3 +27,7 @@
 
 <%# cloudinary => upload photo%>
 <%# redirect to homepage%>
+
+<%# div containers thing%>
+<%# where is the info submited?%>
+<%# redirect to homepage + "form submited!" pop-up%>

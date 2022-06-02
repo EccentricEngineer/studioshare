@@ -1,1 +1,18 @@
-<p > Hello here I am how ....asdsaa nicee </p>
+<h1> <%= current_user.id %> </h1>
+
+<ul>
+  <% @reservations.each do |reservation| %>
+    <li> <%= reservation.date %> </li>
+    <li> <%= reservation.status %> </li>
+ <% end %>
+ </ul>
+
+ <ul>
+  <% @studios.each do |studio| %>
+    <li> <%= studio.name %> </li>
+    <li> <%= studio.address %> </li>
+    <li> <%= studio.photo_url %> </li>
+    <li> <%= studio.opening_hour %> </li>
+    <li> <%= studio.closing_hour %> </li>
+ <% end %>
+ </ul>

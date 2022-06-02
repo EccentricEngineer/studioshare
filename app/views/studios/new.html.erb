@@ -5,12 +5,23 @@
         <%= simple_form_for @studio do |f| %>
         <%= f.input :name %>
         <%= f.input :address %>
-        <%= f.input :photo_url %>
+        <form method="post" action="/home" enctype="multipart/form-data">
+		      <p>
+		      	<input type="file" name="file" autocomplete="off" required>
+		      </p>
         <%= f.input :opening_hour %>
         <%= f.input :closing_hour %>
         <%= f.input :price %>
-        <%= f.submit class: 'btn btn-primary' %>
+        <%= f.submit class: 'btn btn-primary' input onclick="window.location.href = 'https://www.tutorialspoint.com/online_html_editor.php';" %>
       <% end %>
     </div>
   </div>
 </div>
+
+
+<%# form container + doesn't work (link) + redirect (as soon as they create studio) + image thing%>
+<%# if else statement?%>
+<%# link image and submit form to => new stuff%>
+
+<%# cloudinary => upload photo%>
+<%# redirect to homepage%>

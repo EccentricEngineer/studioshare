@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   get 'studios', to: 'studios#index'
-  get '/my-profile', to: 'profiles#my_profile'
+  get '/dashboards', to: 'dashboards#home'
 
   resources :studios do
     resources :reservations, only: [:new, :create]
@@ -14,3 +14,5 @@ Rails.application.routes.draw do
 
   resources :reservations, only: [:show, :index]
 end
+
+#

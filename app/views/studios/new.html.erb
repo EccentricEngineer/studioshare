@@ -1,6 +1,5 @@
-<div class="container">
+<div class="form-container">
   <div class="row">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
       <h1>Create a new studio</h1>
         <%= simple_form_for @studio do |f| %>
         <%= f.input :name %>
@@ -9,11 +8,11 @@
         <%= f.input :opening_hour %>
         <%= f.input :closing_hour %>
         <%= f.input :price %>
-        <%= f.submit class: 'btn btn-primary' %>
+        <%= f.submit class: 'btn button btnwhite' %>
       <% end %>
     </div>
-  </div>
 </div>
+
 
 
 <%# form container + doesn't work (link) + redirect (as soon as they create studio) + image thing%>

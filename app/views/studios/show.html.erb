@@ -7,7 +7,7 @@
     <div class="box-reservation">
       <div class="image-studio">
       <%# image hardcoded rn, pls change later %>
-        <%= image_tag "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80", height: 700 %>
+        <%= cl_image_tag @studio.photo_url.key  %>
       </div>
       <div class="reservation-box">
         <div class="reservation-studio">

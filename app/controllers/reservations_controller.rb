@@ -5,6 +5,7 @@ class ReservationsController < ApplicationController
   before_action :set_studio, only: [ :new, :create ]
 
   def index
+    @user = current_user
     @reservations = current_user.reservations
   end
 
@@ -25,7 +26,7 @@ class ReservationsController < ApplicationController
     @reservation.user = current_user
     @reservation.studio = Studio.find(params[:studio_id])
     if @reservation.save
-      redirect_to studios_path
+      redirect_to studio_path(@studio)
     else
       redirect_to studios_path
     end

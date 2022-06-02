@@ -1,7 +1,6 @@
 <div class="search-form-control form-group">
-  <input class="form-control string required" type="text" placeholder="Where do you want to find a studio?" name="search[query]" id="search_query" />
-  <button name="button" type="submit" class="btn btn-flat">
-    <%# button redirect to all studio for nor - Alexie %>
-    <i href="/studios" class="fas fa-search"></i> Search
-  </button>
+<%= form_tag(studios_path, :method => "get", id: "search-form") do %>
+<%= text_field_tag :search, params[:search], placeholder: "Search for Studios" ,class:"form-control string required" %>
+<%= submit_tag "Search", class:"btn btn-flat" %>
+<% end %>
 </div>

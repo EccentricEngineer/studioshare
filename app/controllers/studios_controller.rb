@@ -4,6 +4,11 @@ class StudiosController < ApplicationController
 
   def index
     @studios = Studio.all
+    if params[:search]
+      @studios = Studio.search(params[:search]).order("created_at DESC")
+    else
+      @studios = Studio.all.order('created_at DESC')
+    end
   end
 
   def show

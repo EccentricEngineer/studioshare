@@ -6,7 +6,7 @@
   <div class="form-container-reservation">
     <h3>Make a reservation for <%= @studio.name %> in <%= @studio.address %></h3>
     <%= simple_form_for [ @studio, @reservation ] do |f| %>
-      <%= f.input :status, label: 'Message the owner', placeholder: "Anything you want to tell the owner?" %>
+      <%= f.input :status, label: 'Message the owner', class: "input-message", placeholder: "Anything you want to tell the owner?" %>
       <%= f.input :date, as: :date, html5: true %>
       <%= f.submit "Reserve", class: "btn button btnwhite" %>
     <% end %>

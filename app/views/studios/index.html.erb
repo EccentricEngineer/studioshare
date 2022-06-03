@@ -1,13 +1,18 @@
-<div class="card-block">
-    <%@studios.each do |studio| %>
-      <div class="studio-card">
-      <div class="card-img" style="background-image: url('<%= cl_image_path studio.photo_url.key%>')">
-      </div>
-      <div class="studio-card-text">
-        <%# <p><%=studio.price %></p>
-        <h3><%= link_to studio.name, studio_path(studio) %></h3>
-        <h4><%= studio.address %></h4>
-      </div>
-      </div>
- <% end %>
+<div class="page-index">
+
+  <h3 class="title-index">Check our available studios!</h3>
+
+  <div class="card-block">
+      <%@studios.each do |studio| %>
+        <div class="studio-card">
+        <div class="card-img" style="background-image: url('<%= cl_image_path studio.photo_url.key%>')">
+        </div>
+        <div class="studio-card-text">
+          <p><%=studio.price%>€/day</p>
+          <h3><%= link_to studio.name, studio_path(studio) %></h3>
+          <h4><%= studio.address %></h4>
+        </div>
+        </div>
+    <% end %>
+  </div>
 </div>

@@ -11,6 +11,7 @@
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item">
+          <%= link_to "Add a new Studio", new_studio_path, class: 'btn button btnwhite' %>
             <a class="btn button btnwhite" href="/dashboards">Dashboard</a>
           </li>
           <li class="nav-item dropdown">

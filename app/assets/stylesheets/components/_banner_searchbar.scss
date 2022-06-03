@@ -1,12 +1,19 @@
+.searchbar {
+  background-color: #1EDD88;
+}
+
 .search-form-control {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
+  // flex-direction: row;
   position: relative;
-  // width: 400px;
+  // width: 500px;
+  margin-left: 400px;
+  margin-right: 400px;
 }
 
 .search-form-control .btn {
-  position: relative;
+  position: absolute;
   top: 15px;
   bottom: 5px;
   right: 2px;

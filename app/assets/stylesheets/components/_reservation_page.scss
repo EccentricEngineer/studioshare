@@ -1,0 +1,20 @@
+.reservation-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  img {
+    height: 400px;
+    width: 500px;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}
+
+// make the input fields cover the whole widtth of the container - Alexie
+// #new-reservation {
+//   input {
+
+//   }
+// }

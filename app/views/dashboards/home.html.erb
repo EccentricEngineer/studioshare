@@ -1,18 +1,45 @@
-<h1> <%= current_user.id %> </h1>
 
-<ul>
+<div class="reservation-container">
+  <h1> Your reservations </h1>
   <% @reservations.each do |reservation| %>
-    <li> <%= reservation.date %> </li>
-    <li> <%= reservation.status %> </li>
- <% end %>
- </ul>
+    <div class="reservation-items">
+      <div class= "reservation-item">
+        <i class="far fa-calendar-check"> </i>
+        <%= reservation.date %>
+      </div>
+      <div class= "reservation-item">
+        <i class="fas fa-microphone"></i>
+        <%= reservation.studio.name %>
+      </div>
+      <div class= "reservation-item">
+        <i class="far fa-address-card"></i>
+        <%= reservation.studio.address %>
+      </div>
+      <div class= "reservation-item">
+        <i class="fas fa-heart"></i>
+        <p>Confirmed!</p>
+      </div>
+    </div>
+  <% end %>
+</div>
 
- <ul>
-  <% @studios.each do |studio| %>
-    <li> <%= studio.name %> </li>
-    <li> <%= studio.address %> </li>
-    <li> <%= studio.photo_url %> </li>
-    <li> <%= studio.opening_hour %> </li>
-    <li> <%= studio.closing_hour %> </li>
- <% end %>
- </ul>
+<div class="listings-container">
+  <h1> Your listings </h1>
+  <div class="listings-grid">
+    <% @studios.each do |studio| %>
+      <div class= "main-container">
+        <div class= "listing-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path studio.photo_url.key, height: 300, crop: :fill %>')">
+          <a href="/studios/<%= studio.id %>"><%= studio.name %></a>
+        </div>
+        <div class= "lower-container">
+          <div class= "info-container">
+            <p><%= studio.address %></p>
+            <p><%= studio.price %>€</p>
+          </div>
+          <a href="/studios/<%= studio.id %>/edit" class="btn button" >edit</a>
+          <a href="/studios/<%= studio.id %>#delete" class="btn button" >delete</a>
+        </div>
+      </div>
+  <% end %>
+  </div>
+</div>

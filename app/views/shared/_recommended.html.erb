@@ -2,90 +2,15 @@
 <h3>Trending studios<span id="dot-color">.</span></h3>
 </div>
 <div class="card-block">
+<% @studios.each do |studio| %>
   <div class="studio-card">
     <div class="card-img" style="background-image: url(https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)">
     </div>
     <div class="studio-card-text">
-      <p>200€/day</p>
-      <h3><%=  %></h3>
+      <p><%= studio.price %></p>
+      <h3><%= link_to studio.name, studio_path(studio) %></h3>
       <h4>United Kingdom</h4>
     </div>
   </div>
-  <div class="studio-card">
-    <div class="card-img" style="background-image: url(https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)">
-    </div>
-    <div class="studio-card-text">
-      <p>150€/day</p>
-      <h3></h3>
-      <h4>United Kingdom</h4>
-    </div>
-  </div>
-  <div class="studio-card">
-    <div class="card-img" style="background-image: url(https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)">
-    </div>
-    <div class="studio-card-text">
-      <p>150€/day</p>
-      <h3></h3>
-      <h4>United Kingdom</h4>
-    </div>
-  </div>
-  <div class="studio-card">
-    <div class="card-img" style="background-image: url(https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)">
-    </div>
-    <div class="studio-card-text">
-      <p>150€/day</p>
-      <h3></h3>
-      <h4>United Kingdom</h4>
-    </div>
-  </div>
+  <%end %>
 </div>
-
-
-<%#
-<div class="recommended-block">
-    <h3>Trending studios<span id="dot-color">.</span></h3>
-
-    <div class="recommended-collection">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="recommended-card">
-              <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="studio-1">
-              <div class="rating">4,8 ★</div>
-              <h3>Paris, FR</h3>
-              <h4>Montmartre recording</h4>
-              <p>85,00e/h</p>
-            </div>
-          </div>
-        <div class="col">
-          <div class="recommended-card">
-            <img src="https://images.unsplash.com/photo-1611532736579-6b16e2b50449?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1126&q=80" alt="studio 2">
-            <div class="rating">NEW</div>
-            <h3>Nashville, TN</h3>
-            <h4>Country music world</h4>
-            <p>75,00e/h</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="recommended-card">
-            <img src="https://images.unsplash.com/photo-1559732277-7453b141e3a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="studio 3">
-            <div class="rating">4,3 ★</div>
-            <h3>London, UK</h3>
-            <h4>Abbey road</h4>
-            <p>100,00e/h</p>
-          </div>
-        </div>
-        <div class="col">
-      <div class="recommended-card">
-        <img src="https://images.unsplash.com/photo-1585666176485-dfba5b1944f0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="studio 4">
-        <div class="rating">4,9 ★</div>
-        <h3>New York, NY</h3>
-        <h4>Electric lady studio</h4>
-        <p>99,99e/h</p>
-      </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> %>

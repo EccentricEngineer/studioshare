@@ -58,7 +58,7 @@ studio1.save
 
 
 studio2 = Studio.new(
-  name: "Alexie's Studio",
+  name: "Alex's Studio",
   user: user1,
   address: "London",
   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
@@ -66,62 +66,142 @@ studio2 = Studio.new(
   price: 200
 )
 
-file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+file = URI.open('https://media.istockphoto.com/photos/abbey-road-studios-london-picture-id1203045502?s=612x612')
 studio2.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 studio2.save
 
-studio3 = Studio.new(
-  name: "Alexie's Studio",
-  user: user1,
-  address: "London",
-  opening_hour: "2022-05-31 14:22:53.657840837 +0200",
-  closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-  price: 200
-)
+# studio3 = Studio.new(
+#   name: "Alexie's Studio",
+#   user: user1,
+#   address: "London",
+#   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+#   price: 200
+# )
 
-file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
-studio3.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-studio3.save
+# file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+# studio3.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+# studio3.save
 
-studio4 = Studio.new(
-  name: "Alexie's Studio",
-  user: user1,
-  address: "London",
-  opening_hour: "2022-05-31 14:22:53.657840837 +0200",
-  closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-  price: 200
-)
+# studio4 = Studio.new(
+#   name: "Alexie's Studio",
+#   user: user1,
+#   address: "London",
+#   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+#   price: 200
+# )
 
-file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
-studio4.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-studio4.save
+# file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+# studio4.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+# studio4.save
 
 
-studio5 = Studio.new(
-  name: "Alexie's Studio",
-  user: user1,
-  address: "London",
-  opening_hour: "2022-05-31 14:22:53.657840837 +0200",
-  closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-  price: 200
-)
+# studio5 = Studio.new(
+#   name: "Alexie's Studio",
+#   user: user1,
+#   address: "London",
+#   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+#   price: 200
+# )
 
-file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
-studio5.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-studio5.save
+# file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+# studio5.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+# studio5.save
 
-studio6 = Studio.new(
-  name: "Alexie's Studio",
-  user: user1,
-  address: "London",
-  opening_hour: "2022-05-31 14:22:53.657840837 +0200",
-  closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-  price: 200
-)
+# studio6 = Studio.new(
+#   name: "Alexie's Studio",
+#   user: user1,
+#   address: "London",
+#   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+#   price: 200
+# )
 
-file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
-studio6.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-studio6.save
+# file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+# studio6.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+# studio6.save
+
+# studio7 = Studio.new(
+#   name: "Alexie's Studio",
+#   user: user1,
+#   address: "London",
+#   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+#   price: 200
+# )
+
+# file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+# studio7.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+# studio7.save
+
+
+# studio8 = Studio.new(
+#   name: "Alexie's Studio",
+#   user: user1,
+#   address: "London",
+#   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+#   price: 200
+# )
+
+# file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+# studio8.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+# studio8.save
+
+# studio9 = Studio.new(
+#   name: "Alexie's Studio",
+#   user: user1,
+#   address: "London",
+#   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+#   price: 200
+# )
+
+# file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+# studio9.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+# studio9.save
+
+# studio10 = Studio.new(
+#   name: "Alexie's Studio",
+#   user: user1,
+#   address: "London",
+#   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+#   price: 200
+# )
+
+# file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+# studio10.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+# studio10.save
+
+
+# studio11 = Studio.new(
+#   name: "Alexie's Studio",
+#   user: user1,
+#   address: "London",
+#   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+#   price: 200
+# )
+
+# file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+# studio11.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+# studio11.save
+
+# studio12 = Studio.new(
+#   name: "Alexie's Studio",
+#   user: user1,
+#   address: "London",
+#   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+#   price: 200
+# )
+
+# file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+# studio12.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+# studio12.save
 
 # studio2 = Studio.create!(
 #   name: "Ali's Studio",

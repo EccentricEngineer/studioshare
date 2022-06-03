@@ -35,8 +35,8 @@
             <p><%= studio.address %></p>
             <p><%= studio.price %>€</p>
           </div>
-          <a href="/studios/<%= studio.id %>/edit" class="btn button" >edit</a>
-          <a href="/studios/<%= studio.id %>#delete" class="btn button" >delete</a>
+          <%= link_to 'edit', edit_studio_path(studio), class: 'btn button'  %>
+          <%= link_to 'delete', studio_path(studio), method: :delete, class: 'btn button' %>
         </div>
       </div>
   <% end %>

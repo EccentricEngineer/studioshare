@@ -58,7 +58,7 @@ studio1.save
 
 
 studio2 = Studio.new(
-  name: "Alexie's Studio",
+  name: "Alex's Studio",
   user: user1,
   address: "London",
   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
@@ -66,12 +66,12 @@ studio2 = Studio.new(
   price: 200
 )
 
-file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+file = URI.open('https://media.istockphoto.com/photos/abbey-road-studios-london-picture-id1203045502?s=612x612')
 studio2.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 studio2.save
 
 studio3 = Studio.new(
-  name: "Alexie's Studio",
+  name: "Claudio's Studio",
   user: user1,
   address: "London",
   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
@@ -79,282 +79,199 @@ studio3 = Studio.new(
   price: 200
 )
 
-file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+file = URI.open('https://image.shutterstock.com/image-photo/hardworking-musician-working-indoors-close-600w-1258763251.jpg')
 studio3.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 studio3.save
 
 studio4 = Studio.new(
-  name: "Alexie's Studio",
-  user: user1,
+  name: "UB4 Studios",
+  user: user2,
   address: "London",
   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
   price: 200
 )
 
-file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+file = URI.open('https://image.shutterstock.com/image-photo/african-american-sound-engineer-working-600w-568181797.jpg')
 studio4.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 studio4.save
 
 
 studio5 = Studio.new(
-  name: "Alexie's Studio",
-  user: user1,
+  name: "Bosco Studios",
+  user: user3,
   address: "London",
   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
   price: 200
 )
 
-file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+file = URI.open('https://image.shutterstock.com/image-photo/deejay-work-600w-505081018.jpg')
 studio5.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 studio5.save
 
 studio6 = Studio.new(
-  name: "Alexie's Studio",
+  name: "Rhythm Studios",
+  user: user4,
+  address: "Manchester",
+  opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+  closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+  price: 250
+)
+
+file = URI.open('https://image.shutterstock.com/image-photo/beautiful-stylish-female-audio-engineer-600w-1760614151.jpg')
+studio6.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+studio6.save
+
+studio7 = Studio.new(
+  name: "Red Gables Facilities Ltd",
   user: user1,
+  address: "Manchester",
+  opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+  closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+  price: 200
+)
+
+file = URI.open('https://image.shutterstock.com/image-photo/music-rehearsal-space-drum-kit-600w-1125206549.jpg')
+studio7.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+studio7.save
+
+
+studio8 = Studio.new(
+  name: "Papa Joes",
+  user: user2,
+  address: "Leeds",
+  opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+  closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+  price: 50
+)
+
+file = URI.open('https://image.shutterstock.com/image-photo/recording-studio-control-room-complete-600w-1178434726.jpg')
+studio8.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+studio8.save
+
+studio9 = Studio.new(
+  name: "KVH Studios",
+  user: user3,
+  address: "London",
+  opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+  closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+  price: 400
+)
+
+file = URI.open('https://image.shutterstock.com/image-photo/interior-recording-studio-600w-710618158.jpg')
+studio9.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+studio9.save
+
+studio10 = Studio.new(
+  name: "Beat Street Studio - Recording",
+  user: user4,
+  address: "Liverpool",
+  opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+  closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+  price: 100
+)
+
+file = URI.open('https://images.unsplash.com/photo-1492891651366-a5c2839dc64b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2034&q=80')
+studio10.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+studio10.save
+
+
+studio11 = Studio.new(
+  name: "Rehearsals",
+  user: user1,
+  address: "Leeds",
+  opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+  closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+  price: 75
+)
+
+file = URI.open('https://images.unsplash.com/photo-1649456674221-12b66d8a6fa8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+studio11.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+studio11.save
+
+studio12 = Studio.new(
+  name: "House of Mook",
+  user: user2,
   address: "London",
   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
   price: 200
 )
 
-file = URI.open('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
-studio6.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-studio6.save
+file = URI.open('https://images.unsplash.com/photo-1649438803136-cc9d41450ff6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')
+studio12.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+studio12.save
 
-# studio2 = Studio.create!(
-#   name: "Ali's Studio",
-#   user: user2,
-#   address: "London",
-#   photo_url: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657840837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 500
-# )
 
-# studio3 = Studio.create!(
-#   name: "Claudio's Studio",
-#   user: user3,
-#   address: "London",
-#   photo_url: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 200
-# )
+studio13 = Studio.new(
+  name: "Premium Sound Studio",
+  user: user3,
+  address: "Manchester",
+  opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+  closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+  price: 150
+)
 
-# studio4 = Studio.create!(
-#   name: "Alex's Studio",
-#   user: user2,
-#   address: "London",
-#   photo_url: "https://images.unsplash.com/photo-1493078770291-aa3109c60ef2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2153&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 150
-# )
+file = URI.open('https://media.istockphoto.com/photos/audio-engineer-artists-working-on-new-music-production-track-list-picture-id1314735819')
+studio13.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+studio13.save
 
-# studio5 = Studio.create!(
-#   name: "Steph's Studio",
-#   user: user3,
-#   address: "London",
-#   photo_url: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 350
-# )
+studio14 = Studio.new(
+  name: "Recording Studio FX",
+  user: user4,
+  address: "London",
+  opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+  closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+  price: 330
+)
 
-# studio6 = Studio.create!(
-#   name: "Hadil's Studio",
-#   user: user3,
-#   address: "London",
-#   photo_url: "https://images.unsplash.com/photo-1581315489338-90e99097ab3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 600
-# )
+file = URI.open('https://images.unsplash.com/photo-1649437636817-ff86121a83bf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80')
+studio14.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+studio14.save
 
-# studio7 = Studio.create!(
-#   name: "Rak's Studio",
-#   user: user1,
-#   address: "London",
-#   photo_url: "https://images.unsplash.com/photo-1581315489338-90e99097ab3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 185
-# )
+studio15 = Studio.new(
+  name: "Rec Rooms Studios LTD",
+  user: user1,
+  address: "Liverpool",
+  opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+  closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+  price: 120
+)
 
-# studio8 = Studio.create!(
-#   name: "Den's Studio",
-#   user: user3,
-#   address: "London",
-#   photo_url: "https://images.unsplash.com/photo-1581315489338-90e99097ab3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 300
-# )
+file = URI.open('https://media.istockphoto.com/photos/recording-studio-suite-picture-id146760417')
+studio15.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+studio15.save
 
-# studio9 = Studio.create!(
-#   name: "Jerry's Studio",
-#   user: user3,
-#   address: "London",
-#   photo_url: "https://images.unsplash.com/photo-1581315489338-90e99097ab3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 225
-# )
 
-# studio10 = Studio.create!(
-#   name: "Angie's Studio",
-#   user: user3,
-#   address: "London",
-#   photo_url: "https://images.unsplash.com/photo-1581315489338-90e99097ab3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 250
-# )
+studio16 = Studio.new(
+  name: "Audio Always",
+  user: user1,
+  address: "Leeds",
+  opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+  closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+  price: 90
+)
 
-# studio11 = Studio.create!(
-#   name: "Lester's Studio",
-#   user: user3,
-#   address: "London",
-#   photo_url: "https://images.unsplash.com/photo-1581315489338-90e99097ab3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 295
-# )
+file = URI.open('https://media.istockphoto.com/photos/electrical-equipment-for-recording-and-computer-monitor-on-workplace-picture-id1176082550')
+studio16.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+studio16.save
 
-# studio12 = Studio.create!(
-#   name: "Markham's Studio",
-#   user: user3,
-#   address: "London",
-#   photo_url: "https://images.unsplash.com/photo-1581315489338-90e99097ab3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 310
-# )
+studio17 = Studio.new(
+  name: "The Sound House",
+  user: user2,
+  address: "London",
+  opening_hour: "2022-05-31 14:22:53.657840837 +0200",
+  closing_hour: "2022-05-31 15:22:53.657840937 +0200",
+  price: 500
+)
 
-# studio13 = Studio.create!(
-#   name: "Larry's Studio",
-#   user: user4,
-#   address: "Liverpool",
-#   photo_url: "https://images.unsplash.com/photo-1581315489338-90e99097ab3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 325
-# )
-
-# studio14 = Studio.create!(
-#   name: "Marquez's Studio",
-#   user: user2,
-#   address: "Liverpool",
-#   photo_url: "https://images.unsplash.com/photo-1581315489338-90e99097ab3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 335
-# )
-
-# studio15 = Studio.create!(
-#   name: "Lindon's Studio",
-#   user: user3,
-#   address: "Liverpool",
-#   photo_url: "https://images.unsplash.com/photo-1581315489338-90e99097ab3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 215
-# )
-
-# studio16 = Studio.create!(
-#   name: "Tipton's Studio",
-#   user: user3,
-#   address: "Liverpool",
-#   photo_url: "https://images.unsplash.com/photo-1581315489338-90e99097ab3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 195
-# )
-
-# studio17 = Studio.create!(
-#   name: "Rachel's Studio",
-#   user: user3,
-#   address: "Manchester",
-#   photo_url: "https://images.unsplash.com/photo-1581315489338-90e99097ab3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 305
-# )
-
-# studio18 = Studio.create!(
-#   name: "Abraham's Studio",
-#   user: user3,
-#   address: "Manchester",
-#   photo_url: "https://images.unsplash.com/photo-1581315489338-90e99097ab3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 250
-# )
-
-# studio19 = Studio.create!(
-#   name: "Yaniv's Studio",
-#   user: user3,
-#   address: "Manchester",
-#   photo_url: "https://images.unsplash.com/photo-1581315489338-90e99097ab3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 215
-# )
-
-# studio20 = Studio.create!(
-#   name: "Nina's Studio",
-#   user: user1,
-#   address: "Manchester",
-#   photo_url: "https://images.unsplash.com/photo-1581315489338-90e99097ab3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 265
-# )
-
-# studio21 = Studio.create!(
-#   name: "Brock's Studio",
-#   user: user2,
-#   address: "Manchester",
-#   photo_url: "https://images.unsplash.com/photo-1581315489338-90e99097ab3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 325
-# )
-
-# studio22 = Studio.create!(
-#   name: "Endem's Studio",
-#   user: user3,
-#   address: "Liverpool",
-#   photo_url: "https://images.unsplash.com/photo-1581315489338-90e99097ab3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 292
-# )
-
-# studio23 = Studio.create!(
-#   name: "Gola's Studio",
-#   user: user3,
-#   address: "Liverpool",
-#   photo_url: "https://images.unsplash.com/photo-1581315489338-90e99097ab3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 330
-# )
-
-# studio24 = Studio.create!(
-#   name: "Lola's Studio",
-#   user: user3,
-#   address: "Liverpool",
-#   photo_url: "https://images.unsplash.com/photo-1581315489338-90e99097ab3c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
-#   opening_hour: "2022-05-31 14:22:53.657850837 +0200",
-#   closing_hour: "2022-05-31 15:22:53.657840937 +0200",
-#   price: 225
-# )
+file = URI.open('https://media.istockphoto.com/photos/recording-equipment-in-a-professional-recording-studio-picture-id1362977640?s=612x612')
+studio17.photo_url.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+studio17.save
 
 reservation1 = Reservation.create!(
-  user: user1,
+  user: user3,
   studio: studio1,
   status: 'Reservation Successful!',
   date: DateTime.now
@@ -362,48 +279,23 @@ reservation1 = Reservation.create!(
 
 reservation2 = Reservation.create!(
   user: user2,
-  studio: studio1,
+  studio: studio12,
   status: 'Reservation Successful!',
   date: DateTime.now
 )
 
 reservation3 = Reservation.create!(
   user: user3,
-  studio: studio1,
+  studio: studio11,
   status: 'Reservation Successful!',
   date: DateTime.now
 )
 
 reservation4 = Reservation.create!(
   user: user4,
-  studio: studio1,
+  studio: studio3,
   status: 'Reservation Successful!',
   date: DateTime.now
 )
-
-
-# review1 = Review.create!(
-#   rating: 5,
-#   comment: "That trip was a wonderful experience!",
-#   user: user1,
-#   studio: studio1,
-#   reservation: reservation1
-# )
-
-# review2 = Review.create!(
-#   rating: 5,
-#   comment: "That trip was a wonderful experience!",
-#   user: user2,
-#   studio: studio2,
-#   reservation: reservation2
-# )
-
-# review3 = Review.create!(
-#   rating: 5,
-#   comment: "That trip was a wonderful experience!",
-#   user: user3,
-#   studio: studio3,
-#   reservation: reservation3
-# )
 
 puts 'Seed: Finished seeding!'

@@ -35,6 +35,7 @@ class StudiosController < ApplicationController
 # user must be logged in at this stage
 
   def edit
+    @studio = Studio.find(params[:id])
   end
 
   def update
@@ -46,11 +47,8 @@ class StudiosController < ApplicationController
   end
 
   def destroy
-    if @studio.destroy
-      redirect_to studios_path(@studio)
-    else
-      render :index
-    end
+    @studio.destroy
+    redirect_to dashboards_path
   end
 
   private

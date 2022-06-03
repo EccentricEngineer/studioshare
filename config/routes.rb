@@ -7,12 +7,13 @@ Rails.application.routes.draw do
   get 'studios', to: 'studios#index'
   get '/dashboards', to: 'dashboards#home'
 
+
   resources :studios do
-    resources :reservations, only: [:new, :create]
+    resources :reservations, only: [:new, :create, :edit, :update, :destroy]
     resources :reviews, only: [:new, :create]
   end
 
-  resources :reservations, only: [:show, :index]
+  resources :reservations, only: [:show, :index, :edit, :update, :destroy]
 end
 
 #

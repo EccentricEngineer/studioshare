@@ -26,7 +26,7 @@ class ReservationsController < ApplicationController
     @reservation.user = current_user
     @reservation.studio = Studio.find(params[:studio_id])
     if @reservation.save
-      redirect_to studio_path(@studio)
+      redirect_to dashboards_path
     else
       redirect_to studios_path
     end

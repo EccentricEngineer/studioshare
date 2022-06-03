@@ -1,27 +1,2 @@
-<div class="form-container">
-  <div class="row">
-      <h1>Create a new studio</h1>
-        <%= simple_form_for @studio do |f| %>
-        <%= f.input :name %>
-        <%= f.input :address %>
-        <%= f.input :photo_url, as: :file%>
-        <%= f.input :opening_hour %>
-        <%= f.input :closing_hour %>
-        <%= f.input :price %>
-        <%= f.submit class: 'btn button btnwhite' %>
-      <% end %>
-    </div>
-</div>
-
-
-
-<%# form container + doesn't work (link) + redirect (as soon as they create studio) + image thing%>
-<%# if else statement?%>
-<%# link image and submit form to => new stuff%>
-
-<%# cloudinary => upload photo%>
-<%# redirect to homepage%>
-
-<%# div containers thing%>
-<%# where is the info submited?%>
-<%# redirect to homepage + "form submited!" pop-up%>
+<h2 style="text-align:center; margin-top:50px">Create your listing</h3>
+<%= render "form", studio: @studio %>

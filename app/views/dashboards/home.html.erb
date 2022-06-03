@@ -36,7 +36,7 @@
             <p><%= studio.price %>€</p>
           </div>
           <%= link_to 'edit', edit_studio_path(studio), class: 'btn button'  %>
-          <%= link_to 'delete', studio_path(studio), method: :delete, class: 'btn button' %>
+          <%= link_to 'delete', studio_path(studio), method: :delete, data: { confirm: "Are you REALLY REALLY sure?" }, class: 'btn button' %>
         </div>
       </div>
   <% end %>

@@ -1,10 +1,11 @@
-
-      <%= simple_form_for studio do |f| %>
-        <%= f.input :name %>
-        <%= f.input :address %>
-        <%= f.input :photo_url, as: :file%>
-        <%= f.input :opening_hour %>
-        <%= f.input :closing_hour %>
-        <%= f.input :price %>
-        <%= f.submit class: 'btn button btnwhite' %>
-      <% end %>
+<div class="form-container">
+  <%= simple_form_for studio do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :photo_url, as: :file%>
+    <%= f.input :opening_hour %>
+    <%= f.input :closing_hour %>
+    <%= f.input :price %>
+    <%= f.submit class: 'btn button btnwhite' %>
+  <% end %>
+</div>

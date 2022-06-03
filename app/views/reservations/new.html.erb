@@ -1,8 +1,14 @@
-<div class="form-container">
-  <h1>Make a reservation</h1>
-  <%= simple_form_for [ @studio, @reservation ] do |f| %>
-    <%= f.input :status, label: 'Message the owner' %>
-    <%= f.input :date, as: :date, html5: true %>
-    <%= f.submit "Reserve", class: "btn button btnwhite" %>
-  <% end %>
+<div class="reservation-page">
+  <div class="image-reservation">
+    <%# <%= cl_image_tag @studio.photo_url.key %>
+    <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="reservation-image">
+  </div>
+  <div class="form-container-reservation">
+    <h3>Make a reservation for <%= @studio.name %> in <%= @studio.address %></h3>
+    <%= simple_form_for [ @studio, @reservation ] do |f| %>
+      <%= f.input :status, label: 'Message the owner', placeholder: "Anything you want to tell the owner?" %>
+      <%= f.input :date, as: :date, html5: true %>
+      <%= f.submit "Reserve", class: "btn button btnwhite" %>
+    <% end %>
+  </div>
 </div>

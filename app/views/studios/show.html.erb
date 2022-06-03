@@ -6,13 +6,14 @@
 
     <div class="box-reservation">
       <div class="image-studio">
-      <%# image hardcoded rn, pls change later %>
-        <%= cl_image_tag @studio.photo_url.key  %>
+      <%# image hardcoded rn, pls change later, for demo only %>
+        <%# <%= cl_image_tag @studio.photo_url.key  %>
+        <img src="https://images.unsplash.com/photo-1618609377864-68609b857e90?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1828&q=80" alt="hardcoded image">
       </div>
       <div class="reservation-box">
         <div class="reservation-studio">
           <div class="top-box-reservation">
-            <h4> <%= @studio.price%>€</h4>
+            <h4> <%= @studio.price%>€/day</h4>
           </div>
           <div class="button-reservation">
             <%= link_to "book this studio", new_studio_reservation_path(@studio) %>

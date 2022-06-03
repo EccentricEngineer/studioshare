@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   get 'studios', to: 'studios#index'
-  get '/dashboards', to: 'dashboards#home'
+  get '/dashboards', to: 'dashboards#home', as: :dashboards
 
 
   resources :studios do

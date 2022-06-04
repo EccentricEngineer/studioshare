@@ -7,8 +7,8 @@
 ### Clone the repository
 
 ```shell
-git clone git@github.com:juliendargelos/project.git
-cd project
+git@github.com:EccentricEngineer/studioshare.git
+cd studioshare
 ```
 
 ### Check your Ruby version
@@ -17,12 +17,12 @@ cd project
 ruby -v
 ```
 
-The ouput should start with something like `ruby 2.5.1`
+The ouput should start with something like `ruby 3.0.3`
 
 If not, install the right ruby version using [rbenv](https://github.com/rbenv/rbenv) (it could take a while):
 
 ```shell
-rbenv install 2.5.1
+rbenv install 3.0.3
 ```
 
 ### Install dependencies
@@ -37,7 +37,7 @@ bundle && yarn
 
 Using [Figaro](https://github.com/laserlemon/figaro):
 
-See [config/application.yml.sample](https://github.com/juliendargelos/project/blob/master/config/application.yml.sample) and contact the developer: [contact@juliendargelos.com](mailto:contact@juliendargelos.com) (sensitive data).
+See [config/application.yml.sample](https://github.com/EccentricEngineer/studioshare/blob/master/config/application.yml.sample) and contact the developer: [ali648@live.com](mailto:ali648@live.com) (sensitive data).
 
 ### Initialize the database
 
@@ -50,8 +50,8 @@ rails db:create db:migrate db:seed
 Using [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli):
 
 ```shell
-heroku git:remote -a project
-heroku git:remote --remote heroku-staging -a project-staging
+heroku git:remote -a studioshare
+heroku git:remote --remote heroku-staging -a studioshare-staging
 ```
 
 ## Serve
@@ -73,7 +73,7 @@ git push heroku-staging
 Go to the Heroku Dashboard and [promote the app to production](https://devcenter.heroku.com/articles/pipelines) or use Heroku CLI:
 
 ```shell
-heroku pipelines:promote -a project-staging
+heroku pipelines:promote -a studioshare-staging
 ```
 
 ### Directly to production (not recommended)
